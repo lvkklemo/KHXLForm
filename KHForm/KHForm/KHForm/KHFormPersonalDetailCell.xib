@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="KHFormPersonalDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDE-Y0-Hab">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="性别: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XJ-0V-u35">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="uJe-Ew-p6n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年龄: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2du-Y2-1ZB">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83.5" id="AWN-lm-Z1R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uDE-Y0-Hab" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="3b5-uo-Oln"/>
+                    <constraint firstItem="6XJ-0V-u35" firstAttribute="centerY" secondItem="uDE-Y0-Hab" secondAttribute="centerY" id="Neh-5Q-Uf2"/>
+                    <constraint firstAttribute="trailing" secondItem="2du-Y2-1ZB" secondAttribute="trailing" constant="30" id="Wvt-2k-dRe"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2du-Y2-1ZB" secondAttribute="bottom" constant="10" id="X99-tA-XmL"/>
+                    <constraint firstItem="6XJ-0V-u35" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Xz6-d1-Mp1"/>
+                    <constraint firstItem="uDE-Y0-Hab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="p9d-ow-scy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uDE-Y0-Hab" secondAttribute="bottom" constant="10" id="pRb-v9-lvx"/>
+                    <constraint firstItem="6XJ-0V-u35" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tM4-gK-CPg"/>
+                    <constraint firstItem="2du-Y2-1ZB" firstAttribute="centerY" secondItem="6XJ-0V-u35" secondAttribute="centerY" id="uc3-cP-s4e"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="tM4-gK-CPg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="2du-Y2-1ZB" id="U73-8m-Erh"/>
+                <outlet property="genderLabel" destination="6XJ-0V-u35" id="Fds-qO-6FV"/>
+                <outlet property="nameLabel" destination="uDE-Y0-Hab" id="Hh5-Vp-CGH"/>
+            </connections>
+            <point key="canvasLocation" x="193" y="263"/>
+        </tableViewCell>
+    </objects>
+</document>
